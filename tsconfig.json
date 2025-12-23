@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "exclude": [
+    "node_modules",
+    "dist",
+    "public"
+  ],
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true, // Enables default-style imports (e.g. import express from 'express') for CommonJS modules
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    // Enable all strict type checking options
+    "strict": true,
+    // Set emitted JavaScript language version
+    "target": "ES2022",
+    "paths": {
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ]
+  }
+}

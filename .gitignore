@@ -1,0 +1,16 @@
+# build/output directories
+dist
+coverage
+
+# environment
+.env
+
+# dependencies
+node_modules/
+
+# IDE
+.vscode
+.idea
+
+# AI
+CLAUDE.md

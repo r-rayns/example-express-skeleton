@@ -1,0 +1,44 @@
+{
+  "name": "example-express-skeleton",
+  "version": "1.0.0",
+  "description": "An example starting point for a basic Express.js server.",
+  "main": "./src/app.ts",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "dev": "env NODE_ENV=development tsx watch ./src/app.ts",
+    "start": "env NODE_ENV=production tsx ./src/app.ts",
+    "lint": "eslint ."
+  },
+  "author": "Robert Raynsford",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@stylistic/eslint-plugin": "^5.2.3",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/luxon": "^3.7.1",
+    "@types/supertest": "^6.0.3",
+    "@vitest/coverage-v8": "^4.0.8",
+    "eslint": "^9.34.0",
+    "globals": "^16.3.0",
+    "supertest": "^7.1.4",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.40.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^4.0.8"
+  },
+  "dependencies": {
+    "chalk": "^5.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "es-toolkit": "^1.39.10",
+    "express": "^5.1.0",
+    "luxon": "^3.7.1",
+    "strip-ansi": "^7.1.0",
+    "zod": "^4.1.1"
+  }
+}
