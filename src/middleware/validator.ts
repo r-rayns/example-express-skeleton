@@ -38,7 +38,7 @@ export const validate = (schema: z.ZodTypeAny, property: ValidationProperty = Va
           writable: false, // Keep as readonly
         });
       } else {
-        // Overwrite the raw request value with the validated values
+        // We can mutate req.body and req.params so just overwrite with the validated values
         req[ property ] = parsedValues;
       }
       next();

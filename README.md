@@ -1,5 +1,7 @@
 # Example Express Skeleton
 
+A [blog post](https://rrayns.co.uk/posts/20251228-express-skeleton-app/) accompanies this repo. In the post the design and structure of this project is discussed in greater detail.
+
 ## Purpose
 
 A structured starting point for building Express.js REST APIs with TypeScript. This skeleton serves as an example or starting point for Express apps it comes with validation, error handling, and request flow without prescribing authentication or database implementations.
@@ -8,14 +10,14 @@ This project is intentionally minimal. It demonstrates patterns for organizing a
 
 ## Key Features
 
-- **TypeScript with ES Modules** - TypeScript with full type safety and strict mode enabled
-- **Zod Validation** - Schema-based request validation with automatic type inference
-- **Centralized Error Handling** - Consistent error responses across the application
-- **Request/Response Logging** - Logging with coloured output for development
-- **Path Aliases** - Clean imports using `@utils/*` instead of relative paths
+- **Defined Structure** - A clear separation of concerns with routes handling paths/middleware, controllers managing requests, and services executing business logic
+- **Zod Validation** - Schema-based request validation with type inference
+- **Centralised Error Handling** - Error handling middleware with consistent error responses across the application
 - **Environment Validation** - Type-safe environment variables validated at startup
-- **Hot Reload Development** - Fast TypeScript execution with tsx watch mode
+- **Request/Response Logging** - Centralised request & response logging, with coloured output for development
 - **Testing** - Setup to use the Vitest framework with unit and integration test examples
+- **TypeScript with ES Modules** - TypeScript with full type safety and strict mode enabled
+
 
 ## Quick Start
 
